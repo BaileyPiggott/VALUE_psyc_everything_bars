@@ -13,7 +13,9 @@ colnames(psyc)[2] <- "year"
 psyc$year <- as.factor(as.character(psyc$year))# convert year column to factor to plot in order
 
 #labels for VALUE criteria
-criteria <- c("Explanation\nof Issues",  "Influence of\nContext and\nAssumptions", "Student's\nPosition", "Conclusions", "Define\nProblem", "Identify\nStrategies","Propose\nSolutions", "Evaluate\nPotential\nSolutions", "Context and\nPurpose for\nWriting", "Content\nDevelopment", "Genre and\nDisciplinary\nConventions",  "Syntax and\nMechanics")
+criteria <- c("Explanation\nof Issues", "Evidence", "Influence of\nContext and\nAssumptions", "Student's\nPosition", "Conclusions",#Critical thinking 
+              "Define\nProblem", "Identify\nStrategies","Propose\nSolutions", "Evaluate\nPotential\nSolutions",  #problem solving
+              "Context and\nPurpose for\nWriting", "Content\nDevelopment", "Genre and\nDisciplinary\nConventions",  "Sources and\nEvidence", "Syntax and\nMechanics") # written communication
 
 # create column to define colours based on value criteria
 define_colour <- data.frame(define_colour = c('a','b','c','a','b','c', 'a','b','c','a','b','c','a','b','c','d','e','f','d','e','f','d','e','f','d','e','f', 'g','h','j', 'g','h','j', 'g','h','j', 'g','h','j', 'g','h','j')) # a,b,c = greens; d,e,f = oranges ; g,h,j = blues
